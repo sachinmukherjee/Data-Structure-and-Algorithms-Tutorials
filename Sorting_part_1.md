@@ -9,10 +9,10 @@
 Sorting is an algorithms which arrange elements in particular order either ascending or descending order.
 
 #### Why Sorting
-Some time sorting is important because it reduces the time complexity of the problem. We can use ** sorting **  to reduce the time complexity of ** search **.
+Some time sorting is important because it reduces the time complexity of the problem. We can use <i>sorting</i>  to reduce the time complexity of <i>search</i>.
 
-_ Best Case _ : ** O(nlogn) **<br>
-_ Worst Case _ : ** O(n*n) **
+<i>Best Case</i> : <b>O(nlogn)</b><br>
+<i>Worst Case</i>: <b>O(n*n)</b>
 
 
 ### Bubble Sort
@@ -45,7 +45,7 @@ Code for the Bubble sort considering ascending order
     }
 
 Here in first loop it number of iteration to be made and it is equal to number of elements and in second loop in iterates through each element and check the condition and make swapping according to the result of the condition.<br>
-__ Time Complexity __ : ** O(n*n) **
+<i>Time Complexity</i> : <b>O(n*n)</b>
 
 ### Selection Sort
 
@@ -75,7 +75,7 @@ It is an in-place sorting algorithm. It works well for small files
     }
 
 It selects an element and compare it with other element in increasing index order and make swapping according to that.
-__ Time Complexity__ : ** O(n*n) ** <br>
+<i>Time Complexity</i> : <b>O(n*n)</b><br>
 
 
 ### Insertion Sort
@@ -104,4 +104,4 @@ It removes an element from input data and insert it into correct position. It is
     }
 
 It picks an index and then move backwards and compare element according to that and make necessary swapping.
-__Time Complexity__ : ** O(n*n) ** <br>
+<i>Time Complexity</i>: <b>O(n*n)</b> <br>
