@@ -74,7 +74,7 @@ It is an in-place sorting algorithm. It works well for small files
 
     }
 
-It selects an element and compare it with other element in increasing index order and make swapping according to that.
+It selects an element and compare it with other element in increasing index order and make swapping according to that.<br>
 <i>Time Complexity</i> : <b>O(n*n)</b><br>
 
 
@@ -103,5 +103,5 @@ It removes an element from input data and insert it into correct position. It is
       }
     }
 
-It picks an index and then move backwards and compare element according to that and make necessary swapping.
+It picks an index and then move backwards and compare element according to that and make necessary swapping.<br>
 <i>Time Complexity</i>: <b>O(n*n)</b> <br>
