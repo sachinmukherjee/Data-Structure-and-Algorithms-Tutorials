@@ -1,4 +1,4 @@
-# Sorting
+# Sorting 1
 
 ## Topics Covered
  * Bubble Sort

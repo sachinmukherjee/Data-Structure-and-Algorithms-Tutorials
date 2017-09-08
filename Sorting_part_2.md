@@ -1,4 +1,4 @@
-# Sorting
+# Sorting 2
 
  * Merge Sort
  * Shell Sort
@@ -10,17 +10,17 @@
 
 Mergining is the process of combining two sorted files to make a bigger file. Selection is the process of dividing a large file into two parts k small elements and n-k large elements. It is used for sorting linked list.
 
-We have to first divide the file and sort them and then merge them.<br>
+We have to first divide the array and sort them and then merge them. We are taking assending order.<br>
 
     void merge(int arr[], int left, int right, int mid)
     {
       int k = 0;  // for new array index
-      int n1 = right - left +1 ;  // for left array
+      int n1 = mid - left +1 ;    // for left array
       int n2 = right - mid;       // for right array
       int L[] = new int[n1];      // creating two new arrays
       int R[] = new int[n2];
 
-      // comping divided array into two new arrays left and right
+      // copying divided array into two new arrays left and right
       for(i=0; i<n1; i++)
       {
         L[i] = arr[i+left];
@@ -88,23 +88,24 @@ Algorithm
 
     int partition(int arr[], int low, int high)
     {
-      int pivot = arr[high];
-      int i = low-1;
-      for(int j=low; j<high-1; j++)
+      int pivot = arr[high];              // take the pivot element
+      int i = low-1;                      // take i as one less than index
+      for(int j=low; j<high-1; j++)       // iterate over all elements
       {
-        if(arr[j]<=pivot)
+        if(arr[j]<=pivot)                 // is element is smaller than pivot
         {
-          i++;
+          i++;                            // increment i then swap with j
           int temp = arr[i];
           arr[i] = arr[j];
           arr[j] = temp;
         }
       }
+      // after than swap pivot with index of i+1
       int temp = arr[i+1];
       arr[i+1] = arr[high];
       arr[high] = temp;
 
-      return i+1;
+      return i+1;            // return pivot posiiton
      }
 
 
