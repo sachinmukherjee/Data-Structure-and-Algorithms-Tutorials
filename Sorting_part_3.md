@@ -21,4 +21,27 @@ How it works
 . We got the sorted array
 
 
-#### Radix Sort
+### Radix Sort
+
+It is same as Counting sort and Bucket Sort. It assumes that all numbers are from the same base b.
+
+How it works
+
+We are considering ascending order
+
+* Since all the number are from 0 to 9 so we will be require 10 buckets.
+* Find the largest number with number of digits it has and according to that fill all the digits with leading zeros so that all number will have same number of digits.
+* Number of sorting pass required will be equal to number of digits in largest number
+* Now sort the number from the first digit from right side. for example if a number is 010 to 0 is the right most digit. so place that number in index equal to right most digit value.
+* Note that one index can contain many numbers so dont worry.
+* Take numbers from bottom
+* Again sort using 2nd digit from right side.
+* Take number from bottom
+* Again sort number using the 3rd digit from right side
+* Repeat the process untill number of passes full fills it
+* At last remove leading zeros
+
+
+
+
+### Bucket Sort
