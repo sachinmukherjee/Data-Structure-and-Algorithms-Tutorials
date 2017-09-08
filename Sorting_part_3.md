@@ -45,3 +45,12 @@ We are considering ascending order
 
 
 ### Bucket Sort
+
+* First count number of element in input and find maximum and minimum element.
+* Since number are from 0 to 9. so take 10 buckets.
+* find divider = ceil(maximum+1/10)  ceil means round off to next digit
+* find index for each element in input in which number has to be store j = floor(arr[i]/divider). for example number is 22 for index will be 22/9 = 2.44 i.e 2.
+* do it for all the element.
+* note that element can overlap each other in index.
+* do insertion sort for each index.
+* take element out.
